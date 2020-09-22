@@ -1,0 +1,68 @@
+
+; Note: Comments begin with ';'
+
+; Sample translation file
+; used to demonstrate clsTranslator
+
+; Some Strings used in the Demo
+String1=I am checked now
+String2=I am unchecked now
+String3=The file you specified was not found, please choose another file.
+
+; Strings-IDs can be unordered and it doesn't matter where you place them in the translation file
+String100=Item
+String101=Description of Item
+String102=Normal
+String103=Simple
+
+[frmTest]
+frmTest=Demonstration
+; Captions of menu-items
+mnuFile=&File
+mnuSupported=&Menus are supported too
+mnuMic=Mic
+mnuTesting=Testing
+mnuIndexed=Even when indexed
+mnuItem(0)=I am Item 1
+mnuItem(1)=I should be called Item 2
+; Caption of the reminder
+lblReminder=Do not forget to see the ToolTip of each control and the contents of the "English.lng"
+; Captions and ToolTips of indexed buttons
+cmdIndexed(0)=We | I am Button 1
+cmdIndexed(1)=are | My name is Button 2 
+cmdIndexed(2)=indexed | I am third button in the array
+cmdIndexed(3)=buttons | I am last of the buttons
+picBox= | Picture can have ToolTips too
+fraIndex=Indexed | I am a Frame, just a Frame nothing else
+chkCheckBox=Hey! Click me | Click me to demostrate Strings
+optOption=Click me to show a message | Strings can be used to show messages or any other thing that does not require a control
+txtTextBox(0)=I do not have ToolTip
+txtTextBox(1)= | and I do not have Text
+;If there is a control array and you do not specify index then the properties are changed of all the controls in the array
+cmbCombo=We all have same Text | We all have same ToolTips too
+cmdObjects=&Objects Demo
+cmdExit=&Exit
+
+[frmObjects]
+frmObjects=Objects Demonstration
+lblStatusBar=The StatusBar is at the bottom.
+lblToolbar=You can set the Captions and ToolTips of Buttons, Panels, Tabs or Column-Headers in indexed controls (control arrays) too.
+lblMode=Mode :
+lstMode= | Select the mode of the StatusBar below
+; Sets the SimpleText property of "sbStatusBar". ToolTipText can be added too.
+sbStatusBar=The statusbar is now in "Simple" mode.
+{1}tbsTabStrip=ListView | Demostrations of Objects in ListView (Column-Headers)
+{2}tbsTabStrip=Toolbar | Demostrations of Objects in Toolbar (Buttons)
+{3}tbsTabStrip=StatusBar | Demostrations of Objects in StatusBar (Panels)
+{1}sbStatusBar=This is some text. | Sample Text
+{2}sbStatusBar=Caps Lock | I am showing the state of Caps Lock
+{3}sbStatusBar=Num Lock | I am showing the state of Num Lock
+{4}sbStatusBar=Scroll Lock | I am showing the state of Scroll Lock
+{1}lstListView=Name
+{2}lstListView=Description
+{3}lstListView=Date
+{1}tbrToolbar(0)=X | I am Button 1 of tbrToolbar(0)
+{3}tbrToolbar(0)=X | Meet Button 3 of tbrToolbar(0)
+{2}tbrToolbar(1)=X | I should be Button 2 of tbrToolbar(1)
+{3}tbrToolbar(2)=X | My name is Button 3, tbrToolbar(2) is my container
+{1}tbrToolbar(2)=X | I am the first Button of tbrToolbar(2)
